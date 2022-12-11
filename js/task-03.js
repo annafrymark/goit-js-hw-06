@@ -15,14 +15,11 @@ const images = [
 
 let galleryContent = "";
 
-images.forEach(function callback(element) {
-  const a = `<li><img
-              src="${element.url}"
-              alt="${element.alt}"
-            /></li>\n`;
-  galleryContent += a;
+images.forEach(function callback(image) {
+  galleryContent += `<li><img src='${image.url}' alt='${image.alt}'/></li>\n`;
 });
 
+
 document
-  .querySelector("ul#gallery")
+  .querySelector("ul.gallery")
   .insertAdjacentHTML("afterbegin", galleryContent);
