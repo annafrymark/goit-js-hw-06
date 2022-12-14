@@ -27,11 +27,13 @@ button {
   display: flex;
   list-style: none;
   flex-direction: column;
+  gap: 20px;
 }
 
 .gallery > img {
-  display: block;
-  width: 100%;
-  flex-basis: calc((100% - 20px) / 3);
+  display: flex;
+  width: 200px;
   height: auto;
+  flex-basis: calc((100% - 20px) / 3);
+  
 }
